@@ -1,0 +1,462 @@
+body {
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-image: linear-gradient(
+    rgba(255, 119, 0, 1),
+    rgba(255, 119, 0, 0.2)
+  );
+}
+
+header {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  background-color: #ff7700;
+  padding: 9rem 0rem 4rem 0rem;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+header h2 {
+  font-size: 1.5rem;
+}
+
+header div button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  background-color: #ff4757;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+header div button:hover {
+  background-color: #e84118;
+}
+
+header nav {
+  display: flex;
+  position: fixed; /* Fixe la navbar en haut */
+  top: 10px;
+  left: 50%; /* Centre horizontalement */
+  transform: translateX(-50%); /* Ajustement pour un centrage parfait */
+  border-radius: 55px; /* Bords arrondis */
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Ombre légère */
+  z-index: 1000; /* S'assure que la navbar est au-dessus */
+  /*background-color: rgba(255, 119, 0, 0.5);*/
+  background-color: rgba(255, 119, 0, 0.7);
+  padding: 0px 1rem;
+}
+
+nav ul {
+  display: flex; /* Affiche les liens horizontalement */
+  list-style-type: none; /* Retire les puces */
+  padding: 0px;
+}
+
+nav ul li {
+  margin: 0px 10px; /* Espacement horizontal entre les liens */
+}
+
+nav ul li button {
+  color: white; /* Couleur du texte */
+  font-family: "Audiowide", sans-serif; /* Police d'écriture */
+  font-size: 16px; /* Taille du texte */
+  transition: color 0.3s ease; /* Animation douce */
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgba(255, 119, 0, 0);
+  border: 0;
+}
+nav img {
+  width: 100px;
+}
+
+ul button:hover {
+  background-color: white;
+  border-radius: 20px;
+  color: #ff7700;
+}
+
+main {
+  background-image: linear-gradient(rgba(255, 119, 0, 1), rgba(255, 119, 0, 1)),
+    linear-gradient(rgba(255, 119, 0, 1), rgba(0, 0, 0, 0.6));
+  padding-bottom: 30px;
+}
+
+.section {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  background: #fff;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#aPropos {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#aPropos div {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+  padding-bottom: 3rem;
+}
+
+#aPropos img {
+  width: 200px;
+}
+
+#aPropos div img {
+  width: 300px;
+  margin-left: 15rem;
+}
+
+#aPropos p {
+  margin: 0rem 15rem;
+  line-height: 30px;
+}
+
+#mds{
+  background-color: white;
+  padding: 1rem;
+  border-radius: 50px;
+}
+
+#competence {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  color: white;
+}
+
+#card_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  border-radius: 10px;
+  border: 3mm ridge rgba(255, 119, 0, 1);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 1);
+  padding: 1rem 4rem;
+  background-image: linear-gradient(
+    rgb(rgb(255, 255, 255)),
+    rgb(rgb(128, 128, 128))
+  );
+}
+
+#competence ul {
+  list-style: none;
+  padding: 0;
+}
+
+#competence ul h3 {
+  margin: 20px 0 10px;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+#competence ul li {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+#competence button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+#competence button:hover {
+  background-color: #0073e6;
+}
+
+#competence a{
+  text-decoration: none;
+  color: white;
+}
+
+.ligne-separatrice {
+  border: none; /* Retire la bordure par défaut */
+  height: 2px; /* Épaisseur de la ligne */
+  background-color: #ffff; /* Couleur de la ligne */
+  width: 80%; /* Longueur de la ligne */
+  margin: 30px auto; /* Espacement vertical et centrage horizontal */
+}
+
+.skill {
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.skill h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.stars {
+  display: flex;
+  gap: 5px; /* Espace entre les étoiles */
+}
+
+.star {
+  font-size: 1.5rem;
+  color: lightgray; /* Couleur des étoiles non remplies */
+}
+
+.starFilled {
+  font-size: 1.5rem;
+  color: blue; /* Couleur des étoiles remplies */
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#Portfolio h2{
+  text-align: center;
+  color: white;
+}
+
+#Portfolio .port_card {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 1);
+  padding: 20px;
+  margin: 1rem 1rem;
+  text-align: center;
+  flex-direction: column;
+}
+
+#Portfolio div img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#Portfolio div h3 {
+  margin: 10px 0.1px;
+  font-size: 1.2rem;
+}
+
+#Portfolio a{
+  text-decoration: none;
+  color: black;
+}
+
+.lang{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.lang p{
+  padding: 0px 5px;
+  color: white;
+}
+
+.html{
+  border: solid 1px green;
+  border-radius: 15px;
+  background-color: green;
+}
+
+.js{
+  border: solid 1px red;
+  border-radius: 15px;
+  background-color: red;
+}
+
+.css{
+  border: solid 1px blue;
+  border-radius: 15px;
+  background-color: blue;
+}
+
+.c{
+  border: solid 1px purple;
+  border-radius: 15px;
+  background-color: purple;
+}
+
+
+
+#formation {
+  margin-bottom: 0px;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group div {
+  flex: 1;
+  min-width: 200px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px 0px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+.required {
+  color: red;
+}
+
+
+
+#conatct{
+  color : black
+}
+
+#contact button {
+  padding: 10px;
+  border-radius: 12px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header h2 {
+    font-size: 1.2rem;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .menu a {
+    font-size: 0.9rem;
+  }
+
+  .section {
+    padding: 30px 10px;
+  }
+
+  #Portfolio div div {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header h2 {
+    font-size: 1rem;
+  }
+
+  header button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu li {
+    margin: 5px 0;
+  }
+
+  #Portfolio div div {
+    width: 100%;
+  }
+
+  .section h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  header h2 {
+    font-size: 0.9rem;
+  }
+
+  header button {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+
+  .menu a {
+    font-size: 0.8rem;
+    padding: 8px 10px;
+  }
+
+  .section {
+    padding: 20px 10px;
+  }
+}
